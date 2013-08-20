@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Body:</b>
-  <%= @comment.body %>
-</p>
+  <h1>Comment:</h1>
+    <p><%= @comment.body %></p>
+  <h1>Post:</h1>
+    <p><%= link_to @comment.post.title, post_path %></p>
+  <h2><%= link_to 'Replies', reply_path %></h2>
 
-<p>
-  <b>Post:</b>
-  <%= @comment.post %>
-</p>
+
 
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |

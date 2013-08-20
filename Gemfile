@@ -41,6 +41,9 @@ group :development do
   gem 'binding_of_caller'
 end
 
+gem 'rack-mini-profiler'
+
+gem 'will_paginate'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
