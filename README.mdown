@@ -5,3 +5,7 @@ I've got a lot to say, and now I have a place to say it!!!!!
 Read all my amazing posts!!!!! You can load them into the app with: `rake load_blog:load_shit`
 
 Click through comments and replies for each post if you want! Enjoy!
+
+#Want some stats???
+
+6/480 ms load = .0125
