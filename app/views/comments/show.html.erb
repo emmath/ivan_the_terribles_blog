@@ -4,7 +4,15 @@
     <p><%= @comment.body %></p>
   <h1>Post:</h1>
     <p><%= link_to @comment.post.title, post_path %></p>
-  <h2><%= link_to 'Replies', reply_path %></h2>
+
+  <% @comment.each do |comment| %>
+    <p><%= @comment.body %></p>
+     <h4>Reply</h4>
+      <% comment.replies.each do |reply| %>
+          <p><%= reply.body %></p>
+      <% end %>
+    <% end %>
+
 
 
 

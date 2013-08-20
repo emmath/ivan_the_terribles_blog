@@ -1,9 +1,9 @@
 IvanTheTerriblesBlog::Application.routes.draw do
 
-  resources :posts do
-    resources :comments do
-      resources :replies
-    end
+  resources :posts
+
+  resources :comments do
+    resources :replies
   end
 
   root :to => 'posts#index'

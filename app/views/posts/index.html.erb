@@ -7,8 +7,9 @@
   <section class="post">
     <h2><%= link_to post.title, post %></h2>
     <div><%= post.body %></div>
+    <%= link_to "Comments", post %>
+<% end %>
 
-  <% end %>
     <div class="post_nav">
       <%= link_to 'Show', @post %> |
     </div>

@@ -1,10 +1,9 @@
 class CommentsController < ApplicationController
-  before_filter :get_post
-  before_filter :get_comment, only: [:show, :edit, :update, :destroy]
+  #before_filter :get_post
+  #before_filter :get_comment, only: [:show, :edit, :update, :destroy]
 
   def index
-    @comments = Post.comments.(params[:page]).per_page(7)
-
+    @comments = Comment.order("created_at")
   end
 
   def show
