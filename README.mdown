@@ -8,4 +8,4 @@ Click through comments and replies for each post if you want! Enjoy!
 
 #Want some stats???
 
-6/480 ms load = .0125
+7/959 ms load = .007
